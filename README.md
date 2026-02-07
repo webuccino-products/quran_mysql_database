@@ -77,9 +77,11 @@ Translation SQL files are available in `translations/`. Import any single transl
 | 1 | The Clear Quran | Dr. Mustafa Khattab | 2015 | Uses contemporary English to ensure clarity and accessibility for modern readers. |
 | 2 | The Koran Interpreted | Arthur John Arberry | 1955 | His 1955 translation is highly regarded for its literary quality and attempt to mirror the cadence and rhythm of the original Arabic text. Arberry was a professor of Arabic at Cambridge University, not a practitioner of Islam. |
 
-## Coming Next
+## Roadmap
 
-- **Translations** (separate tables per source)
-- **Reflections** and additional metadata
-- **Topics & Tags** linked to related verses
+- **Add More Translations** 
+- **Add Transliteration** (Display Arabic to Latin transliteration for each verse)
+- **Add navigation based on traditional Quran structure** (Juz' (Ajzaa - Parts), Hizb, Sajdah (Prostration verses))
+- **Topics, Tags and Verse Linking** (Juz' (Ajzaa - Parts), Hizb, Sajdah (Prostration verses))
+- **Cross-Verse Connections** 
 
