@@ -157,11 +157,63 @@ or
 
 Download ZIP → Extract
 
-2. Create a database:
+2. Create a database (optional)
+
+The file `quranDB.sql` is designed to **create the database automatically** during import (in the next step) using the name:
 
 ```
 QuranDB
 ```
+
+If you are fine with this default behavior, you can **skip this step** and move directly to **Step 3 (Import)**.
+
+---
+
+### If you prefer to create the database manually
+
+Create a database named:
+
+```
+QuranDB
+```
+
+Using the following charset and collation (recommended for Arabic Quran text):
+
+```sql
+CREATE DATABASE QuranDB
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_0900_as_cs;
+```
+
+> **Why this matters**  
+> - `utf8mb4` fully supports Arabic characters and Quranic diacritics (Tashkeel).  
+> - `utf8mb4_0900_as_cs` is accent-sensitive and case-sensitive, ensuring exact storage and matching of Quran text.
+
+If your MySQL version is **older than 8.0**, you may use:
+
+```sql
+CREATE DATABASE QuranDB
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_cs;
+```
+
+---
+
+### Using a different database name
+
+If you want to use a different database name than `QuranDB`, open the file:
+
+```
+quranDB.sql
+```
+
+and replace all occurrences of:
+
+```
+QuranDB
+```
+
+with your preferred database name **before importing**.
 
 3. Import:
 
@@ -169,7 +221,7 @@ QuranDB
 quranDB.sql
 ```
 
-This file creates tables and inserts all data.
+This file will only create the DB if it dose not exist then creates tables and inserts all data in it.
 
 ---
 
