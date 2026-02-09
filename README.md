@@ -4,7 +4,7 @@
 ![Database](https://img.shields.io/badge/Database-MySQL-orange)
 ![Encoding](https://img.shields.io/badge/Encoding-UTF8MB4-blue)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Verified Domain](https://img.shields.io/badge/domain-verified-brightgreen)
+
 
 This repository provides a **ready-to-import MySQL database containing the text of the Holy Quran** for developers who need a reliable, structured Quran dataset.
 
