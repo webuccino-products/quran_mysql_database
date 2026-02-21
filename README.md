@@ -227,6 +227,34 @@ translations/
 > Some translations permit commercial use while others are limited to non-commercial usage.  
 > Always verify the license of each translation before using it in commercial projects.
 
+### Important Note on UTF-8 Encoding
+
+When using translations, ensure that your HTML page includes the following tag inside the `<head>` section:
+
+```html
+<meta charset="UTF-8">
+```
+
+This is crucial because some translations contain special Unicode characters, such as macrons and angled quotation marks. Without UTF-8 encoding, these characters may be stored or displayed using HTML entities instead of their proper readable form.
+
+#### Comparison Example
+
+Correct (UTF-8 – Recommended for storage and display):
+
+```
+Alif-Lām-Mīm.
+You ‹alone› we worship and You ‹alone› we ask for help.
+```
+
+Example of Entity-Encoded Version (may appear if UTF-8 is not properly used):
+
+```
+Alif-L&amacr;m-M&imacr;m.
+You &lsaquo;alone&rsaquo; we worship and You &lsaquo;alone&rsaquo; we ask for help.
+```
+
+To ensure translations are stored in clean UTF-8 format (human-readable form), configure your database and web pages to use UTF-8 encoding. HTML entities should not be required when the page is properly configured with UTF-8.
+
 ---
 
 ### Included Translation Metadata
